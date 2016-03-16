@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<GridPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.expense.gui.TableController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TableView fx:id="transactionTable" editable="false" minHeight="300.0" minWidth="-Infinity">
+      	<columns>
+            <TableColumn fx:id="dateCol" maxWidth="100.0" minWidth="-Infinity" prefWidth="100.0" resizable="false" text="Data" />
+      		<TableColumn fx:id="amountCol" maxWidth="100.0" minWidth="-Infinity" prefWidth="100.0" resizable="false" text="Kwota" />
+      		<TableColumn fx:id="categoryCol" maxWidth="120.0" minWidth="-Infinity" prefWidth="120.0" resizable="false" text="Kategoria" />
+      		<TableColumn fx:id="infoCol" maxWidth="230.0" minWidth="-Infinity" prefWidth="230.0" resizable="false" text="Info" />
+      	</columns>
+      </TableView>
+   </children>
+</GridPane>
